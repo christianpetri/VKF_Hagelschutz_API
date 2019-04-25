@@ -145,10 +145,10 @@ EthernetClient client;
       Serial.println("******************************************************");
       Serial.println("Time Intervall");
       
-      int apiResonse = makeGetRequestToHagelschutzAPI();
-      printResponseToConsole(apiResonse);
-      handleBlinds(apiResonse);
-      handleLEDsAccoringToTheResponse(apiReson se);
+      int apiResponse = makeGetRequestToHagelschutzAPI();
+      printResponseToConsole(apiResponse);
+      handleBlinds(apiResponse);
+      handleLEDsAccoringToTheResponse(apiResponse);
       Serial.println("Wait for 2 minutes until the next request is sent.");       
     } 
     pullBlindsUp();
